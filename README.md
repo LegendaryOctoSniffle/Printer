@@ -12,7 +12,7 @@ Though all of the technology is already out there, we will have to design some 3
 
 I'll bring sufficient experience with 3D printers: I've built a couple from kit so far. You can collaborate on the design of the printed parts, or just come and learn/assemble. Of course, I'll print all of the printed parts we need. I'll be doing this project with or without you, but of course it would be great to work together. (: I might rope in a few other friends.
 
-I'm not sure how to best put a group together. But if you want to join, then star *this* repo ([https://github.com/LegendaryOctoSniffle/Printer](https://github.com/LegendaryOctoSniffle/Printer)) ; I'll invite you to the group and figure out how to get in touch. Tentatively I'm thinking to make our first meeting 1pm on March 10th.
+I'm not sure how to best put a group together. But if you want to join, then star *this* repo ([https://github.com/LegendaryOctoSniffle/Printer](https://github.com/LegendaryOctoSniffle/Printer)) ; I'll invite you to the group and figure out how to get in touch. Tentatively I'm thinking to make our first meeting 1pm on ~~March 10th~~ March 11th.
 
 Cheers!
 
