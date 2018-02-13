@@ -12,8 +12,10 @@ Though all of the technology is already out there, we will have to design some 3
 
 I'll bring sufficient experience with 3D printers: I've built a couple from kit so far. You can collaborate on the design of the printed parts, or just come and learn/assemble. Of course, I'll print all of the printed parts we need. I'll be doing this project with or without you, but of course it would be great to work together. (: I might rope in a few other friends.
 
-I'm not sure how to best put a group together. But if you want to join, then star *this* repo ([https://github.com/LegendaryOctoSniffle/Printer](https://github.com/LegendaryOctoSniffle/Printer)) ; I'll invite you to the group and figure out how to get in touch. Tentatively I'm thinking to make our first meeting 1pm on ~~March 10th~~ March 11th.
+I'm not sure how to best put a group together. But if you want to join, then star *this* repo ([https://github.com/LegendaryOctoSniffle/Printer](https://github.com/LegendaryOctoSniffle/Printer)) ; I'll invite you to the group and figure out how to get in touch.
 
-Cheers!
+## Schedule
 
---Joe
+### March 11th, 1:10PM, Suzallo Library, University of Washington
+
+I'll be reserving a group study room at the Suzallo Library. I'll pick the room on March 1st, based on the number of people planning to attend. Go ahead and purchase your [initial parts for March 11th](https://github.com/LegendaryOctoSniffle/Parts#march-10-march-11-2018). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
