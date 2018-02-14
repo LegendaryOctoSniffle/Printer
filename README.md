@@ -14,6 +14,13 @@ Another secondary goal of the printer is that it should be inexpensive. The basi
 
 ## Schedule
 
+We will meet once a month for 4 or 5 months. The basic structure will be:
+
+1. We'll buy some parts for the upcoming meeting.
+2. We'll explore the function of those parts.
+3. (Optional) We'll design the 3D printed parts necessary to assemble your purchased parts together. You can contribute to the design of these parts or just use other people's designs. Multiple people can independently design their own parts, working alone or together with others. And in the end, we don't have to settle on one "final" design: different people can use different solutions that they like best. Additionally, some parts can be taken directly from existing designs on the internet.
+4. Send me your designs a week before the next meeting, and I'll have them printed for you. Or you can print them on your own if you have access to a 3D printer through a library, or work, etc.
+
 ### March 11th, 1:10PM, Suzallo Library, University of Washington
 
 I'll be reserving a group study room at the Suzallo Library. I'll pick the room on March 1st, based on the number of people planning to attend. Go ahead and purchase your [initial parts for March 11th](https://github.com/LegendaryOctoSniffle/Parts#march-10-march-11-2018). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
@@ -23,6 +30,8 @@ I'll refer to [this video](https://youtu.be/KroO4_xwKcs) to explain some of the 
 The goal for the first meeting will be to create a working sled drive, minus the 3D printed parts. In the video above, the sleds are the orange things moving up and down the square rails.
 
 The printer in the video uses a belt drive: the sleds are attached to a belt which is turned by motors in the base of the printer. The printer that we're making won't be using a belt: it will use a heavy threaded rod that's specially designed for driving precision movements.
+
+#### Parts
 
 For our first meeting, we'll be assembling one "leg" of our printer. Though the parts list below is sufficient for one leg of the printer, we'll eventually be ordering three of all of the quantities provided below.
 
