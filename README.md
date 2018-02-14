@@ -23,7 +23,7 @@ We will meet once a month for 4 or 5 months. The basic structure will be:
 
 ### March 11th, 1:10PM, Suzallo Library, University of Washington
 
-I'll be reserving a group study room at the Suzallo Library. I'll pick the room on March 1st, based on the number of people planning to attend. Go ahead and purchase your [initial parts for March 11th](https://github.com/LegendaryOctoSniffle/Parts#march-10-march-11-2018). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
+I'll be reserving a group study room at the Suzallo Library. I'll pick the room on March 1st, based on the number of people planning to attend. Go ahead and purchase your [initial parts for March 11th](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
 
 I'll refer to [this video](https://youtu.be/KroO4_xwKcs) to explain some of the parts that we'll be buying. Some of the parts and mechanisms will be different, but the basics will be the same.
 
