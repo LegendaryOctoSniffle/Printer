@@ -21,9 +21,9 @@ We will meet once a month for 4 or 5 months. The basic structure will be:
 3. (Optional) We'll design the 3D printed parts necessary to assemble your purchased parts together. You can contribute to the design of these parts or just use other people's designs. Multiple people can independently design their own parts, working alone or together with others. And in the end, we don't have to settle on one "final" design: different people can use different solutions that they like best. Additionally, some parts can be taken directly from existing designs on the internet.
 4. Send me your designs a week before the next meeting, and I'll have them printed for you. Or you can print them on your own if you have access to a 3D printer through a library, or work, etc.
 
-### March 11th, 1:10PM, Suzallo Library, University of Washington
+### March 11th, 1:00PM, Study Room 5, Foster Business Library, University of Washington
 
-I'll be reserving a group study room at the Suzallo Library. I'll pick the room on March 1st, based on the number of people planning to attend. Go ahead and purchase your [initial parts for March 11th](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
+Go ahead and purchase your [initial parts for March 11th](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
 
 I'll refer to [this video](https://youtu.be/KroO4_xwKcs) to explain some of the parts that we'll be buying. Some of the parts and mechanisms will be different, but the basics will be the same.
 
