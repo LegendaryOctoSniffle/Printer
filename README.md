@@ -23,6 +23,8 @@ We will meet once a month for 4 or 5 months. The basic structure will be:
 
 ### March 11th, 1:00PM, Study Room 5, Foster Business Library, University of Washington
 
+#### [See pics/vid from this meetup](https://github.com/LegendaryOctoSniffle/Printer/tree/master/march-11-meetup)
+
 Go ahead and purchase your [initial parts for March 11th](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
 
 I'll refer to [this video](https://youtu.be/KroO4_xwKcs) to explain some of the parts that we'll be buying. Some of the parts and mechanisms will be different, but the basics will be the same.
