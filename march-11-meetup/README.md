@@ -27,10 +27,10 @@ See the SCAD itself for some helpful comments.
 
 And the carriage SCADs are in the carriage directory.
 
-## Problems Rendering in OpenSCAD?
+### Problems Rendering in OpenSCAD?
 
 Especially with Windows? I had [this problem](https://github.com/openscad/openscad/issues/1591), and resolved it with the "force Goldfeather" advice.
 
-## Your Carriages
+### Your Carriages
 
 Push them into the march-11-meetup/carriages directory! I'll print them a week before the next meetup.
