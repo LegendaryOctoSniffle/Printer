@@ -26,3 +26,7 @@ I've also uploaded a SCAD with some example holes through it.
 See the SCAD itself for some helpful comments.
 
 And the carriage SCADs are in the carriage directory.
+
+## Your Carriages
+
+Push them into the march-11-meetup/carriages directory! I'll print them a week before the next meetup.
