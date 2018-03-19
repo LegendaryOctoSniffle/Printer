@@ -11,13 +11,11 @@ The sled has to:
   2. Provide screw holes for the brass lead-screw nut and a hole for the lead-screw to go through.
   3. Have that 45 to 60 degree overhang.
 
-For example:
+If it fits that, it will do its job. I've provided an example SCAD with the basic shape, but it can be made taller or skinnier, or wider, etc. At the very least, you'll have to subtract out the holes. For example:
 ![Rendered example carraige with holes](carriage/carriage_w_example_holes.png)
 ![Carriage example in real life](carriage/carriage_irl.png)
 
-If it fits that, it will do its job. I've provided an example SCAD with the basic shape, but it can be made taller or skinnier, or wider, etc. At the very least, you'll have to subtract out the holes.
-
-Putting the two closer together is better than further apart, but they don't have to be too close together. Also, cool looking is better than not cool looking. And it's like 10 cents worth of plastic, so we can revise it once you see it printed and put together.
+Putting the two holes closer together is better than further apart, but they don't have to be too close together. Also, cool looking is better than not cool looking. And it's like 10 cents worth of plastic, so we can revise it once you see it printed and put together.
 
 You can use a ruler to get the exact milimeter measurements of the parts, or you can guess. In any case, use variables as much as you can so that we can easily make changes.
 
