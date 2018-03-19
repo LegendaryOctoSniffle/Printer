@@ -1,3 +1,6 @@
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/LegendaryOctoSniffle/Lobby)
+
+
 # Printer
 
 This repository is for the LegendaryOctoSniffle design group. The LegendaryOctoSniffle will be a new 3D delta printer design, inspired by the RepRap [Kossel](http://reprap.org/wiki/Kossel) and [3DR](http://reprap.org/wiki/3DR). See [the invitation](INVITATION.md) if you've been invited to join!
