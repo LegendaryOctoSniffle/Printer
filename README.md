@@ -5,7 +5,7 @@ This repository is for the LegendaryOctoSniffle design group. The LegendaryOctoS
 
 This repository will ultimately include models, images, instructions, parts lists, etc., for the construction of the LegendaryOctoSniffle. Presently, it contains coordinating instructions for the design group who will be creating these materials.
 
-![Carriage example in real life](march-11-meetup/carriage/carriage_irl.png)
+![Carriage example in real life](carriage/carriage_irl.png)
 
 ## Goals
 
@@ -29,5 +29,10 @@ We will meet once a month for 4 or 5 months. The basic structure will be:
 2. We'll explore the function of those parts.
 3. (Optional) We'll design the 3D printed parts necessary to assemble your purchased parts together. You can contribute to the design of these parts or just use other people's designs. Multiple people can independently design their own parts, working alone or together with others. And in the end, we don't have to settle on one "final" design: different people can use different solutions that they like best. Additionally, some parts can be taken directly from existing designs on the internet.
 4. Send me your designs a week before the next meeting, and I'll have them printed for you. Or you can print them on your own if you have access to a 3D printer through a library, or work, etc.
+
+## Schedule
+
+### [Meeting 01: March 11th, 1:00PM, Study Room 5, Foster Business Library, University of Washington](meeting-01/)
+### [Meeting 02: April 8th, 1:00PM-3:00PM, Suzallo Library Room 334, University of Washington](meeting-02/)
 
 

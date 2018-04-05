@@ -1,10 +1,12 @@
 Thanks to Kayla 🤘 for taking pictures and video, throughout Joe's explanations on how we'll be constructing 🏗️ the printer legs.
 
-# March 11th, 1:00PM, Study Room 5, Foster Business Library, University of Washington
+# Meeting 01
 
-#### [See pics/vid from this meetup](https://github.com/LegendaryOctoSniffle/Printer/tree/master/march-11-meetup)
+#### [See pics/vid from this meetup](https://github.com/LegendaryOctoSniffle/Printer/tree/master/meeting-01)
 
-Go ahead and purchase your [initial parts for March 11th](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
+## Before the Meeting
+
+Go ahead and purchase your [initial parts for meeting 01](#parts). I've received mine, and I'm excited! You might not have to bring all of your parts every time, but for this one do bring all of the parts that you receive. I received mine within a week of my order, but if you haven't received all of them by March 11th it won't be a big problem.
 
 I'll refer to [this video](https://youtu.be/KroO4_xwKcs) to explain some of the parts that we'll be buying. Some of the parts and mechanisms will be different, but the basics will be the same.
 
@@ -39,7 +41,7 @@ Most of the items that I've linked to are sold by Zyltech. We'll be making most 
 
 Below is a sketch for a very basic design of the carriage/sled.
 
-![Rendered example carraige](carriage/rendered_carriage.png)
+![Rendered example carraige](../carriage/rendered_carriage.png)
 
 The sled has to:
   1. Hold on to the linear bearing (which slides up and down the smooth rod)
@@ -68,4 +70,4 @@ Especially with Windows? I had [this problem](https://github.com/openscad/opensc
 
 ### Your Carriages
 
-Push them into the march-11-meetup/carriages directory! I'll print them a week before the next meetup.
+Push them into the /carriages directory! I'll print them a week before the next meetup.
