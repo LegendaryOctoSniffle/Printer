@@ -49,8 +49,8 @@ The sled has to:
   3. Have that 45 to 60 degree overhang.
 
 If it fits that, it will do its job. I've provided an example SCAD with the basic shape, but it can be made taller or skinnier, or wider, etc. At the very least, you'll have to subtract out the holes. For example:
-![Rendered example carraige with holes](carriage/carriage_w_example_holes.png)
-![Carriage example in real life](carriage/carriage_irl.png)
+![Rendered example carraige with holes](../carriage/carriage_w_example_holes.png)
+![Carriage example in real life](../carriage/carriage_irl.png)
 
 Putting the two holes closer together is better than further apart, but they don't have to be too close together. Also, cool looking is better than not cool looking. And it's like 10 cents worth of plastic, so we can revise it once you see it printed and put together.
 
@@ -59,7 +59,7 @@ You can use a ruler to get the exact milimeter measurements of the parts, or you
 For the screw holes, use a radius of 1mm.
 
 I've also uploaded a SCAD with some example holes through it.
-![Carriage with example holes](carriage/rendered_carriage_w_example_holes.png)
+![Carriage with example holes](../carriage/rendered_carriage_w_example_holes.png)
 See the SCAD itself for some helpful comments.
 
 And the carriage SCADs are in the carriage directory.
