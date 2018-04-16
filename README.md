@@ -5,6 +5,7 @@ This repository is for the LegendaryOctoSniffle design group. The LegendaryOctoS
 
 This repository will ultimately include models, images, instructions, parts lists, etc., for the construction of the LegendaryOctoSniffle. Presently, it contains coordinating instructions for the design group who will be creating these materials.
 
+![Bossless top](top/bossless_top/render.png)
 ![Carriage example in real life](carriage/carriage_irl.png)
 
 ## Goals
