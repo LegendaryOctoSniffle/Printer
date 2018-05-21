@@ -1,13 +1,14 @@
-side_length = 300;
+side_length = 330;
 extrusion_inset = 25;
 thickness = 20;
 
-smooth_rod_inset = 23;
-lead_screw_inset = 37;
+smooth_rod_inset = 30;
+lead_screw_inset = 45;
 
-smooth_rod_width = 10;
+smooth_rod_width = 9;
 lead_screw_width = 15;
-stepper_motor_screw_distance = 20;
+stepper_motor_screw_distance = 31;
+stepper_motor_screw_width = 3.7;
 
 
 center_distance = side_length*sqrt(3)/3;
@@ -97,7 +98,7 @@ translate([0, extrusion_inset + smooth_rod_inset, 0]) {
 translate([0, extrusion_inset + lead_screw_inset, 0]) {
     for (offset = [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
         translate([offset[0]*stepper_motor_screw_distance/2, offset[1]*stepper_motor_screw_distance/2, 0]) {
-            cylinder(d=3.5, h = 20, $fn=100, center=true);
+            cylinder(d=stepper_motor_screw_width, h = 20, $fn=100, center=true);
         }
     }
     cylinder(d=lead_screw_width, h = 20, $fn=100, center=true);
