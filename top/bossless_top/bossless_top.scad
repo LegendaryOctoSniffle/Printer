@@ -36,7 +36,7 @@ translate([0, -500 + extrusion_inset + 21/2, 0]) {
 
 translate([0, extrusion_inset, thickness/2]) {
 rotate([90, 0, 90]) {
-    cylinder(d=5, h=100, center=true, $fn=100);
+    cylinder(d=4, h=100, center=true, $fn=100);
     translate([0, 0, 50 + 21/2 + 5]) {
         cylinder(d=10, h=100, center=true, $fn=100);
     }
@@ -46,7 +46,7 @@ rotate([90, 0, 90]) {
 }
 }
 
-translate([0, -50 + 21/2 + extrusion_inset + 10, thickness/2]) {
+translate([0, -50 + 30/2 + extrusion_inset + 10, thickness/2]) {
 rotate([90, 0, 0]) {
     cylinder(d=5, h=100, center=true, $fn=100);
 }
@@ -78,12 +78,12 @@ for (extension = [1/4, 5/9]) {
     for (side = [1, -1]) {
         translate([side*wing_x*(1 - extension), wing_y*(1 - extension) + center_distance*(extension), thickness/2]) {
             rotate([90, 0, -30*side]) {
-                cylinder(d=5, h=20, $fn = 100, center=true);
+                cylinder(d=3.5, h=20, $fn = 100, center=true);
             }
             if (side == -1 ) {
                 rotate([90, 0, -30*side]) {
                     translate([0, 0, 7])
-                    cylinder(d=10, h=4, $fn = 6, center=true);
+                    cylinder(d = 5.5 / cos(180 / 6) + 0.2, h=4, $fn = 6, center=true);
                 }
             }
             
