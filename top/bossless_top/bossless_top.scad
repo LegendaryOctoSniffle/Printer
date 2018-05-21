@@ -17,7 +17,8 @@ wing_x = cos(60)*side_length/2;
 wing_y = sin(60)*side_length/2;
 
 difference() {
-union() {
+
+// The main bulk of the body
 linear_extrude(height=thickness) {
 hull() {
     circle(d=5, center=true, $fn=100);
@@ -32,16 +33,18 @@ hull() {
     }
 }
 }
-}
 
+// Subtracting the smooth rod
 translate([0, extrusion_inset + smooth_rod_inset, 0]) {
     cylinder(d=smooth_rod_width, h = 100, $fn=100, center=true);
 }
 
+// Subtracting the extrusion
 translate([0, -500 + extrusion_inset + 21/2, 0]) {
     cube(size=[21, 1000, 50], center=true);
 }
 
+// Subtracting the screw to the left and right of the extrusion
 translate([0, extrusion_inset, thickness/2]) {
 rotate([90, 0, 90]) {
     cylinder(d=4, h=100, center=true, $fn=100);
@@ -54,6 +57,7 @@ rotate([90, 0, 90]) {
 }
 }
 
+// Subtracting the screw to the front of the extrusion
 translate([0, -50 + 30/2 + extrusion_inset + 28, thickness/2]) {
 rotate([90, 0, 0]) {
     cylinder(d=4, h=100, center=true, $fn=100);
@@ -63,6 +67,7 @@ rotate([90, 0, 0]) {
 }
 }
 
+// Subtracting the "hollow center" of the main bulk
 translate([0, 0, bottom_thickness]) {
 linear_extrude(height = thickness) {
 hull() {
@@ -85,6 +90,7 @@ translate([-(wing_x/2.8 - 11.5), wing_y/2.8 - 4, 0]) {
 }
 }
 
+// Subtracting the screw holes that connect the three "tops"
 for (extension = [1/4, 5/9]) {
     for (side = [1, -1]) {
         translate([side*wing_x*(1 - extension), wing_y*(1 - extension) + center_distance*(extension), thickness/2]) {
@@ -102,10 +108,8 @@ for (extension = [1/4, 5/9]) {
     }
 }
 
-translate([0, extrusion_inset + smooth_rod_inset, 0]) {
-    cylinder(d=smooth_rod_width, h = 20, $fn=100, center=true);
-}
-
+// Subtracting the hole of the lead screw and the mounting
+// screws for the motor.
 translate([0, extrusion_inset + lead_screw_inset, 0]) {
     for (offset = [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
         translate([offset[0]*stepper_motor_screw_distance/2, offset[1]*stepper_motor_screw_distance/2, 0]) {
@@ -118,20 +122,28 @@ translate([0, extrusion_inset + lead_screw_inset, 0]) {
     cylinder(d=lead_screw_width, h = 20, $fn=100, center=true);
 }
 
-translate([-wing_x, wing_y, thickness/2])
-rotate([90, 180, -60])
+// Subtracting the "LEGEN" text
+translate([-wing_x, wing_y, thickness/2]) {
+rotate([90, 180, -60]) {
 linear_extrude(height=2) {
 translate([-1, 0, 0])
 text("LEGEN", font="Helvetica:style=Bold", valign="center", halign="right");
 }
+}
+}
 
-translate([wing_x, wing_y, thickness/2])
-rotate([90, 180, 60])
+// Subtracting the "DARY" text
+translate([wing_x, wing_y, thickness/2]) {
+rotate([90, 180, 60]) {
 linear_extrude(height=2) {
 translate([.8, 0, 0])
 text("DARY", font="Helvetica:style=Bold", valign="center", halign="left");
 }
+}
+}
 
+// Subtracting out the big cylindrical holes for routing
+// wires
 for(side = [1, -1]) {
 translate([side*wing_x*7/18, center_distance*2/3, 0]) {
     cylinder(r=23, h=100, center=true, $fn=100);
@@ -140,6 +152,7 @@ translate([side*wing_x*7/18, center_distance*2/3, 0]) {
 
 }
 
+// Adding the guide for the smooth rod
 difference() {
 translate([0, extrusion_inset + smooth_rod_inset, thickness/2]) {
     cylinder(d=smooth_rod_width + 5, h = thickness, $fn=100, center=true);
