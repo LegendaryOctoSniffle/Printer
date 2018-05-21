@@ -92,7 +92,7 @@ for (extension = [1/4, 5/9]) {
                 cylinder(d=3.5, h=20, $fn = 100, center=true);
             }
             if (side == -1 ) {
-                rotate([90, 0, -30*side]) {
+                rotate([90, 30, -30*side]) {
                     translate([0, 0, 7])
                     cylinder(d = 5.5 / cos(180 / 6) + 0.2, h=4, $fn = 6, center=true);
                 }
@@ -130,6 +130,12 @@ rotate([90, 180, 60])
 linear_extrude(height=2) {
 translate([.8, 0, 0])
 text("DARY", font="Helvetica:style=Bold", valign="center", halign="left");
+}
+
+for(side = [1, -1]) {
+translate([side*wing_x*7/18, center_distance*2/3, 0]) {
+    cylinder(r=23, h=100, center=true, $fn=100);
+}
 }
 
 }
