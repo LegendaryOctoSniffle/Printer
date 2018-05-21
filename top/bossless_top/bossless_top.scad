@@ -1,9 +1,10 @@
 side_length = 330;
 extrusion_inset = 25;
 thickness = 20;
+bottom_thickness = 5;
 
-smooth_rod_inset = 30;
-lead_screw_inset = 45;
+smooth_rod_inset = 22;
+lead_screw_inset = 37;
 
 smooth_rod_width = 9;
 lead_screw_width = 15;
@@ -16,6 +17,7 @@ wing_x = cos(60)*side_length/2;
 wing_y = sin(60)*side_length/2;
 
 difference() {
+union() {
 linear_extrude(height=thickness) {
 hull() {
     circle(d=5, center=true, $fn=100);
@@ -30,6 +32,12 @@ hull() {
     }
 }
 }
+}
+
+translate([0, extrusion_inset + smooth_rod_inset, 0]) {
+    cylinder(d=smooth_rod_width, h = 100, $fn=100, center=true);
+}
+
 translate([0, -500 + extrusion_inset + 21/2, 0]) {
     cube(size=[21, 1000, 50], center=true);
 }
@@ -46,13 +54,16 @@ rotate([90, 0, 90]) {
 }
 }
 
-translate([0, -50 + 30/2 + extrusion_inset + 10, thickness/2]) {
+translate([0, -50 + 30/2 + extrusion_inset + 28, thickness/2]) {
 rotate([90, 0, 0]) {
-    cylinder(d=5, h=100, center=true, $fn=100);
+    cylinder(d=4, h=100, center=true, $fn=100);
+    translate([0, 0, -35]) {
+        cylinder(d=7, h=30, center=true, $fn=100);
+    } 
 }
 }
 
-translate([0, 0, 5]) {
+translate([0, 0, bottom_thickness]) {
 linear_extrude(height = thickness) {
 hull() {
 translate([0, center_distance - 8, 0]) {
@@ -98,7 +109,10 @@ translate([0, extrusion_inset + smooth_rod_inset, 0]) {
 translate([0, extrusion_inset + lead_screw_inset, 0]) {
     for (offset = [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
         translate([offset[0]*stepper_motor_screw_distance/2, offset[1]*stepper_motor_screw_distance/2, 0]) {
-            cylinder(d=stepper_motor_screw_width, h = 20, $fn=100, center=true);
+            cylinder(d=stepper_motor_screw_width, h = 100, $fn=100, center=true);
+            translate([0, 0, bottom_thickness]) {
+                cylinder(d=7, h=100, $fn=100);
+            }
         }
     }
     cylinder(d=lead_screw_width, h = 20, $fn=100, center=true);
@@ -127,7 +141,10 @@ translate([0, extrusion_inset + smooth_rod_inset, thickness/2]) {
 translate([0, extrusion_inset + smooth_rod_inset, 0]) {
     cylinder(d=smooth_rod_width, h = 100, $fn=100, center=true);
 }
+
 cube([6, 1000, 1000], center=true);
+
 }
+
 
 
