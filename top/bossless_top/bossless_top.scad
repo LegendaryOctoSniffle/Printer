@@ -47,7 +47,7 @@ translate([0, -500 + extrusion_inset + 21/2, 0]) {
 // Subtracting the screw to the left and right of the extrusion
 translate([0, extrusion_inset, thickness/2]) {
 rotate([90, 0, 90]) {
-    cylinder(d=4, h=100, center=true, $fn=100);
+    cylinder(d=4.8, h=100, center=true, $fn=100);
     translate([0, 0, 50 + 21/2 + 5]) {
         cylinder(d=10, h=100, center=true, $fn=100);
     }
@@ -60,7 +60,7 @@ rotate([90, 0, 90]) {
 // Subtracting the screw to the front of the extrusion
 translate([0, -50 + 30/2 + extrusion_inset + 28, thickness/2]) {
 rotate([90, 0, 0]) {
-    cylinder(d=4, h=100, center=true, $fn=100);
+    cylinder(d=4.8, h=100, center=true, $fn=100);
     translate([0, 0, -35]) {
         cylinder(d=7, h=30, center=true, $fn=100);
     } 
@@ -161,7 +161,7 @@ translate([0, extrusion_inset + smooth_rod_inset, 0]) {
     cylinder(d=smooth_rod_width, h = 100, $fn=100, center=true);
 }
 
-cube([6, 1000, 1000], center=true);
+cube([6.8, 1000, 1000], center=true);
 
 }
 
