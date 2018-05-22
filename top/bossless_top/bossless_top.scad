@@ -158,8 +158,29 @@ text("DARY", font="Helvetica:style=Bold", valign="center", halign="left");
 // Subtracting out the big cylindrical holes for routing
 // wires
 for(side = [1, -1]) {
-translate([side*wing_x*7/18, center_distance*2/3, 0]) {
-    cylinder(r=23, h=100, center=true, $fn=100);
+translate([side*wing_x*6/18, center_distance*2/3, 0]) {
+    cylinder(r=20, h=100, center=true, $fn=100);
+}
+}
+
+// Add accessory moutning rails
+translate([0, 0, -thickness])
+linear_extrude(height=thickness*2) {
+hull() {
+    translate([0, R*22/24, 0])
+    circle(d=4.3, $fn=100);
+    
+    translate([0, R*17/24, 0])
+    circle(d=4.3, $fn=100);
+}
+for (side = [-1, 1]) {
+    hull() {
+    translate([side*wing_x*23/24 - side*15, wing_y*23/24, 0])
+    circle(d=4.3, $fn=100);
+    
+    translate([side*wing_x*18/24 - side*15, wing_y*18/24, 0])
+    circle(d=4.3, $fn=100);
+    }
 }
 }
 
