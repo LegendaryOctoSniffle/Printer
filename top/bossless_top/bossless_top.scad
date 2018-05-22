@@ -163,7 +163,7 @@ translate([side*wing_x*6/18, center_distance*2/3, 0]) {
 }
 }
 
-// Add accessory moutning rails
+// Add accessory mounting rails
 translate([0, 0, -thickness])
 linear_extrude(height=thickness*2) {
 hull() {
