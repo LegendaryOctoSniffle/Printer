@@ -3,6 +3,11 @@ extrusion_inset = 25;
 thickness = 20;
 bottom_thickness = 5;
 
+// When subtracting objects of the same dimension in preview,
+// OpenSCAD leaves a zero width "shell". Set the fudge factor
+// to .1 to remove this in preview, but set it to 0 for rendering.
+fudge_factor = .1;
+
 smooth_rod_inset = 22;
 lead_screw_inset = 37;
 
@@ -16,22 +21,30 @@ center_distance = side_length*sqrt(3)/3;
 wing_x = cos(60)*side_length/2;
 wing_y = sin(60)*side_length/2;
 
+R = side_length*sqrt(3)/3;
+r = R/2;
+
 difference() {
 
 // The main bulk of the body
 linear_extrude(height=thickness) {
-hull() {
-    circle(d=5, center=true, $fn=100);
-    translate([0, side_length*sqrt(3)/3, 0]) {
-        circle(d=5, center=true, $fn=100);
-    }
-    translate([cos(60)*side_length/2, sin(60)*side_length/2, 0]) {
-        circle(d=1, center=true, $fn=100);
-    }
-    translate([-cos(60)*side_length/2, sin(60)*side_length/2, 0]) {
-        circle(d=1, center=true, $fn=100);
-    }
+polygon(points=[[0, 0], [wing_x*2, wing_y*2], [-wing_x*2, wing_y*2]]);
+
 }
+
+// Subtracting the other thirds of the triangel
+translate([0, 0, -.1/2])
+linear_extrude(height=thickness + .1) {
+    polygon(
+        points=[
+            [-wing_x*2 - .1, wing_y*2 + fudge_factor],
+            [wing_x*2 + .1, wing_y*2 + fudge_factor],
+            [wing_x, wing_y],
+            [0, R],
+            [-wing_x - fudge_factor, wing_y + fudge_factor],
+        ]
+    );
+        
 }
 
 // Subtracting the smooth rod
@@ -164,6 +177,4 @@ translate([0, extrusion_inset + smooth_rod_inset, 0]) {
 cube([6.8, 1000, 1000], center=true);
 
 }
-
-
 
