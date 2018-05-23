@@ -6,7 +6,7 @@ bottom_thickness = 5;
 // When subtracting objects of the same dimension in preview,
 // OpenSCAD leaves a zero width "shell". Set the fudge factor
 // to .1 to remove this in preview, but set it to 0 for rendering.
-fudge_factor = .1;
+fudge_factor = 0;
 
 smooth_rod_inset = 22;
 lead_screw_inset = 37;
@@ -138,7 +138,7 @@ translate([0, extrusion_inset + lead_screw_inset, 0]) {
 // Subtracting the "LEGEN" text
 translate([-wing_x, wing_y, thickness/2]) {
 rotate([90, 180, -60]) {
-linear_extrude(height=2) {
+linear_extrude(height=8) {
 translate([-1, 0, 0])
 text("LEGEN", font="Helvetica:style=Bold", valign="center", halign="right");
 }
@@ -148,7 +148,7 @@ text("LEGEN", font="Helvetica:style=Bold", valign="center", halign="right");
 // Subtracting the "DARY" text
 translate([wing_x, wing_y, thickness/2]) {
 rotate([90, 180, 60]) {
-linear_extrude(height=2) {
+linear_extrude(height=8) {
 translate([.8, 0, 0])
 text("DARY", font="Helvetica:style=Bold", valign="center", halign="left");
 }
