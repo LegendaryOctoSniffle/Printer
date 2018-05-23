@@ -7,14 +7,14 @@ height = 23;
 linear_bearing_width = 16;
 screw_width = 3.7;
 screw_distance = 12;
-screw_depth = 8;
+screw_depth = 10;
 lead_screw_width = 11.5;
 
-linear_bearing_offset = 16;
-lead_screw_offset = 31;
+linear_bearing_offset = 13.5;
+lead_screw_offset = 28.5;
 
-limit_switch_screw_offset = 5;
-limit_switch_screw_width = 4;
+limit_switch_screw_offset = 2.7;
+limit_switch_screw_width = 4.1;
 limit_switch_screw_depth = 10;
 
 // The `difference` function starts with the first thing and
