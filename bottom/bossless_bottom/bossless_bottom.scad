@@ -1,31 +1,50 @@
 side_length = 330;
 extrusion_inset = 25;
 thickness = 20;
+bottom_thickness = 5;
 
-mounting_hole_inset = 20;
-mounting_hole_offset = 13;
+// When subtracting objects of the same dimension in preview,
+// OpenSCAD leaves a zero width "shell". Set the fudge factor
+// to .1 to remove this in preview, but set it to 0 for rendering.
+fudge_factor = .1;
+
+smooth_rod_inset = 22;
+lead_screw_inset = 37;
+
+smooth_rod_width = 9;
+lead_screw_width = 15;
+stepper_motor_screw_distance = 31;
+stepper_motor_screw_width = 3.7;
 
 
 center_distance = side_length*sqrt(3)/3;
 wing_x = cos(60)*side_length/2;
 wing_y = sin(60)*side_length/2;
 
+R = side_length*sqrt(3)/3;
+r = R/2;
+
 difference() {
 
 // The main bulk of the body
 linear_extrude(height=thickness) {
-hull() {
-    circle(d=5, center=true, $fn=100);
-    translate([0, side_length*sqrt(3)/3, 0]) {
-        circle(d=5, center=true, $fn=100);
-    }
-    translate([cos(60)*side_length/2, sin(60)*side_length/2, 0]) {
-        circle(d=1, center=true, $fn=100);
-    }
-    translate([-cos(60)*side_length/2, sin(60)*side_length/2, 0]) {
-        circle(d=1, center=true, $fn=100);
-    }
+polygon(points=[[0, 0], [wing_x*2, wing_y*2], [-wing_x*2, wing_y*2]]);
+
 }
+
+// Subtracting the other thirds of the triangel
+translate([0, 0, -.1/2])
+linear_extrude(height=thickness + .1) {
+    polygon(
+        points=[
+            [-wing_x*2 - .1, wing_y*2 + fudge_factor],
+            [wing_x*2 + .1, wing_y*2 + fudge_factor],
+            [wing_x, wing_y],
+            [0, R],
+            [-wing_x - fudge_factor, wing_y + fudge_factor],
+        ]
+    );
+        
 }
 
 // Subtracting the extrusion
@@ -57,8 +76,8 @@ rotate([90, 0, 0]) {
 }
 
 // Subtracting the "hollow center" of the main bulk
-translate([0, 0, -thickness/2]) {
-linear_extrude(height = thickness*2) {
+translate([0, 0, bottom_thickness]) {
+linear_extrude(height = thickness) {
 hull() {
 translate([0, center_distance - 8, 0]) {
     circle(d=3, center=true, $fn=100);
@@ -66,26 +85,41 @@ translate([0, center_distance - 8, 0]) {
 translate([wing_x - 11.5, wing_y - 4, 0]) {
     circle(d=3, center=true, $fn=100);
 }
-translate([wing_x/2.8 - 6.5, wing_y/2.8 + 6, 0]) {
+translate([wing_x/2.8 - 11.5, wing_y/2.8 - 4, 0]) {
     circle(d=3, center=true, $fn=100);
 }
 translate([-(wing_x - 11.5), wing_y - 4, 0]) {
     circle(d=3, center=true, $fn=100);
 }
-translate([-(wing_x/2.8 - 6.5), wing_y/2.8 + 6, 0]) {
+translate([-(wing_x/2.8 - 11.5), wing_y/2.8 - 4, 0]) {
     circle(d=3, center=true, $fn=100);
 }
 }
 }
 }
 
-// Subtract the mounting holes
-for (side = [-1, 0, 1]) {
-    translate([side*mounting_hole_offset, extrusion_inset + mounting_hole_inset, 0])
-    cylinder(d=4.1, h=100, $fn=100, center=true);
+// Subtract out the big hole in the center
+translate([0, 130, 0])
+cylinder(d=90, center=true, h=50, $fn=100);
+
+// Add accessory mounting rails
+translate([0, 0, -thickness])
+for(distance = [9/24, 11/24, 13/24])
+linear_extrude(height=thickness*2) {
+    hull() {
+    translate([wing_x*distance - 15, wing_y*distance, 0])
+    circle(d=4.3, $fn=100);
+        
+    translate([-wing_x*distance + 15, wing_y*distance, 0])
+    circle(d=4.3, $fn=100);
+    }
+
 }
 
-// Subtracting the screw holes that connect the three "bottoms"
+
+
+
+// Subtracting the screw holes that connect the three "tops"
 for (extension = [1/4, 5/9]) {
     for (side = [1, -1]) {
         translate([side*wing_x*(1 - extension), wing_y*(1 - extension) + center_distance*(extension), thickness/2]) {
@@ -103,10 +137,11 @@ for (extension = [1/4, 5/9]) {
     }
 }
 
+
 // Subtracting the "LEGEN" text
 translate([-wing_x, wing_y, thickness/2]) {
 rotate([90, 180, -60]) {
-linear_extrude(height=2) {
+linear_extrude(height=8) {
 translate([-1, 0, 0])
 text("OCTO", font="Helvetica:style=Bold", valign="center", halign="right");
 }
@@ -116,7 +151,7 @@ text("OCTO", font="Helvetica:style=Bold", valign="center", halign="right");
 // Subtracting the "DARY" text
 translate([wing_x, wing_y, thickness/2]) {
 rotate([90, 180, 60]) {
-linear_extrude(height=2) {
+linear_extrude(height=8) {
 translate([.8, 0, 0])
 text("SNIFFLE", font="Helvetica:style=Bold", valign="center", halign="left");
 }
@@ -124,7 +159,6 @@ text("SNIFFLE", font="Helvetica:style=Bold", valign="center", halign="left");
 }
 
 
+
 }
-
-
 
