@@ -9,9 +9,9 @@ smooth_rod_inset = 22;
 lead_screw_inset = 37;
 
 smooth_rod_width = 9;
-lead_screw_width = 22.3;
+lead_screw_width = 23.3;
 stepper_motor_screw_distance = 31;
-stepper_motor_screw_width = 3.8;
+stepper_motor_screw_width = 3.9;
 
 difference() {
   bossless(
