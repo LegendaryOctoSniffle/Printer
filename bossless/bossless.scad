@@ -22,7 +22,7 @@ module bossless(
 
     }
 
-    // Subtracting the other thirds of the triangel
+    // Subtracting the other thirds of the triangle
     translate([0, 0, -.1 / 2])
     linear_extrude(height = thickness + .1) {
       polygon(
