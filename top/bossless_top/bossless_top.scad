@@ -88,6 +88,6 @@ difference() {
     cylinder(d = lead_screw_width, h = 200, $fn = 100, center = true);
   }
 
-  cube([6.8, 1000, 1000], center = true);
+  cube([7, 1000, 1000], center = true);
 
 }
