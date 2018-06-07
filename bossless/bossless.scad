@@ -99,7 +99,7 @@ module bossless(
           if (side == -1) {
             rotate([90, 30, -30 * side]) {
               translate([0, 0, 7])
-              cylinder(d = 5.5 / cos(180 / 6) + 0.2, h = 4, $fn = 6, center = true);
+              cylinder(d = 5.5 / cos(180 / 6) + 0.2, h = 5.5, $fn = 6, center = true);
             }
           }
 
