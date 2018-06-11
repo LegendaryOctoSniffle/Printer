@@ -35,7 +35,7 @@ We will meet once a month for 4 or 5 months. The basic structure will be:
 
 ### [Meeting 01: March 11th, 1:00PM, Study Room 5, Foster Business Library, University of Washington](meeting-01/)
 ### [Meeting 02: April 8th, 1:00PM-3:00PM, Suzallo Library Room 334, University of Washington](meeting-02/)
-### [Meeting 03: July 7th. 1:00PM-3:00PM. University of Washington Campus (room TBD)(meeting-03/)
-### [Meeting 04: August 4th. 1:00PM-3:00PM. University of Washington Campus (room TBD)(meeting-04/)
+### [Meeting 03: July 7th. 1:00PM-3:00PM. University of Washington Campus (room TBD)](meeting-03/)
+### [Meeting 04: August 4th. 1:00PM-3:00PM. University of Washington Campus (room TBD)](meeting-04/)
 
 
