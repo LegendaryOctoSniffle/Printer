@@ -8,7 +8,8 @@ module bossless(
     text_2="",
     thickness=20,
     bottom_thickness=5,
-    extrusion_inset=29
+    extrusion_inset=29,
+    font_size_factor=2/3
   ) {
   difference() {
 
@@ -90,7 +91,7 @@ module bossless(
     }
 
     // Subtracting the screw holes that connect the three "tops"
-    for (placement = [[1/5, bottom_thickness + 5], [1/2, bottom_thickness + 5], [15/18, thickness - 5]]) {
+    for (placement = [[1/5, bottom_thickness + 4], [1/2, bottom_thickness + 4], [15/18, thickness - 5]]) {
       screw_extension = placement[0];
       screw_height = placement[1];
       for (side = [1, -1]) {
@@ -118,7 +119,7 @@ module bossless(
       rotate([90, 180, -60]) {
         translate([-1, 0, -1.5])
         linear_extrude(height = 8) {
-          text(text_1, font = "Helvetica:style=Bold", valign = "center", halign = "right");
+          text(text_1, size=thickness*font_size_factor, font = "Helvetica:style=Bold", valign = "center", halign = "right");
         }
       }
     }
@@ -128,12 +129,10 @@ module bossless(
       rotate([90, 180, 60]) {
         translate([.8, 0, -1.5])
         linear_extrude(height = 8) {
-          text(text_2, font = "Helvetica:style=Bold", valign = "center", halign = "left");
+          text(text_2, size=thickness*font_size_factor, font = "Helvetica:style=Bold", valign = "center", halign = "left");
         }
       }
     }
 
   }
 } // END MODULE
-
-
