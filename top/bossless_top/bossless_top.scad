@@ -1,6 +1,6 @@
 include <../../bossless/bossless.scad>;
 
-side_length = 340;
+side_length = 330;
 extrusion_inset = 29;
 thickness = 20;
 bottom_thickness = 5;
