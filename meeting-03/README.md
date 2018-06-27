@@ -1,4 +1,4 @@
-# Meeting 03 - Saturday, July 7th. 1PM-3PM. University of Washington Campus (room TBD)
+# Meeting 03 - Saturday, July 7th. 1PM-3PM. University of Washington Campus (Suzzallo 333)
 
 In this meeting, we will finish off the *structural* elements of our printer. In our next (and final) meeting, we will complete the *electrical* components of our printer.
 
