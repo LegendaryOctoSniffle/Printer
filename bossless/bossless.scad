@@ -90,9 +90,15 @@ module bossless(
     }
 
     // Subtracting the screw holes that connect the three "tops"
-    for (extension = [1 / 4, 5 / 9]) {
+    for (placement = [[1/5, bottom_thickness + 5], [1/2, bottom_thickness + 5], [15/18, thickness - 5]]) {
+      screw_extension = placement[0];
+      screw_height = placement[1];
       for (side = [1, -1]) {
-        translate([side * bossless_x(side_length) * (1 - extension), bossless_y(side_length) * (1 - extension) + bossless_R(side_length) * (extension), thickness / 2]) {
+        translate([
+          side * bossless_x(side_length) * (1 - screw_extension),
+          bossless_y(side_length) * (1 - screw_extension) + bossless_R(side_length) * (screw_extension),
+          screw_height
+        ]) {
           rotate([90, 0, -30 * side]) {
             cylinder(d = 3.5, h = 20, $fn = 100, center = true);
           }
@@ -129,3 +135,5 @@ module bossless(
 
   }
 } // END MODULE
+
+
