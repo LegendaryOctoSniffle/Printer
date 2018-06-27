@@ -1,6 +1,6 @@
 include <../../bossless/bossless.scad>;
 
-side_length = 340;
+side_length = 330;
 thickness = 20;
 bottom_thickness = 5;
 
@@ -13,12 +13,12 @@ difference() {
   );
 
   // Subtract out the big hole in the center
-  translate([0, 130, 0])
-  cylinder(d = 90, center = true, h = 50, $fn = 100);
+  translate([0, 135, 0])
+  cylinder(d = 80, center = true, h = 50, $fn = 100);
 
   // Subtract accessory mounting rails
   translate([0, 0, -thickness])
-  for (distance = [9 / 24, 11 / 24, 13 / 24])
+  for (distance = [9 / 24, 11 / 24, 13 / 24, 15 / 24])
     linear_extrude(height = thickness * 2) {
       hull() {
         translate([bossless_x(side_length) * distance - 15, bossless_y(side_length) * distance, 0])
