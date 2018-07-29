@@ -1,4 +1,4 @@
-# Meeting 04 - Saturday, August 4th. 1PM-4PM. University of Washington Campus (room TBD)
+# Meeting 04 - Saturday, August 4th. 1PM-4PM. Radius Apartments (Mike's building) __[rooftop common area](http://www.radiusslu.com/gallery/level-eight-amenities/)__: 400 Boren Ave N, Seattle WA 98109
 
 In this (final) meeting, we will complete the *electrical* components of our printer. We're likely to use up all three hours calibrating our printers.
 
