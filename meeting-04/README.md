@@ -1,5 +1,7 @@
 # Meeting 04 - Saturday, August 4th. 1PM-4PM. Radius Apartments (Mike's building) __[rooftop common area](http://www.radiusslu.com/gallery/level-eight-amenities/)__: 400 Boren Ave N, Seattle WA 98109
 
+<img src="http://www.radiusslu.com/wp-content/uploads/2016/04/21.jpg" alt="Radius Apartments common area">
+
 In this (final) meeting, we will complete the *electrical* components of our printer. We're likely to use up all three hours calibrating our printers.
 
 ## Parts
