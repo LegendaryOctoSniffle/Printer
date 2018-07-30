@@ -15,5 +15,25 @@ Here are the parts that you will need to purchase:
   
 The quantities are weird because I'm making a shorter printer to fit on my counter, and I'll be giving you some of my longer parts. If you've already bought all three of your 2020 extrusions and lead screws, then that's not a problem!
 
+## Pics from 7/7 meeting
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_141130.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_141133.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_144139%20(copy)-smiley.png">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_144151.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_145303.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_145307.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_150447.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_150456.jpg">
+
+<img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-03/20180707_150501-smiley.png">
+
 
 
