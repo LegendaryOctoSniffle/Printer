@@ -1,4 +1,4 @@
-# Meeting 04 - Saturday, August 4th. 1PM-4PM. Radius Apartments (Mike's building) __[rooftop common area](http://www.radiusslu.com/gallery/level-eight-amenities/)__: 400 Boren Ave N, Seattle WA 98109
+# Meeting 04 - Saturday, August 4th. 1PM-4PM. Radius Apartments (Mike's building) __[rooftop common area](http://www.radiusslu.com/gallery/level-eight-amenities/)__: __[400 Boren Ave N, Seattle, WA 98109 -- South Lake Union](https://goo.gl/maps/6jpcmqKH3d52)__
 
 <img src="https://github.com/LegendaryOctoSniffle/Printer/blob/master/meeting-04/radius-apartments.jpeg" alt="Radius Apartments common area">
 
