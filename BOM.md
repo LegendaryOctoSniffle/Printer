@@ -4,7 +4,7 @@ Parts Group 1:
 * T8x8 Leadscrew w/nut (500mm) (x3)
   This will be the threaded rod that will move each of our sleds up and down. We'll couple the motor to one end, and secure the length of the rod with a bearing that lets it turn freely. The x8 doesn't mean to buy 8, it designates the pitch of the rod threads. [Ebay](https://www.ebay.com/itm/T8x8-Lead-Screw-Pitch-2-Lead-8-Stainless-Rod-Linear-Rail-Bar-Shaft-w-Brass-Nut/372243139945)
 * 8mm pillow block bearing. (x3)
-  These are the bearings that will keep the rod aligned in place while letting it turn freely. Buy two. [Ebay](https://www.ebay.com/itm/2X-8mm-pillow-block-Self-aligning-bearing-mounted-support-3D-printer-CNC-Reprap-/322008974125). The linked item is a 2 pack: you can buy just one two pack. [Alternate Ebay listing](https://www.ebay.com/itm/2pcs-KP08-P08-8mm-Diameter-Bore-Self-Aligning-Pillow-Block-Bearing-/132306260310): if the first listing sells out, you can buy also buy this from the seller of the LM8UU bearings.
+  These are the bearings that will keep the rod aligned in place while letting it turn freely. Buy three. [Ebay](https://www.ebay.com/itm/2X-8mm-pillow-block-Self-aligning-bearing-mounted-support-3D-printer-CNC-Reprap-/322008974125). The linked item is a 2 pack.
 * 2020 Aluminum Extrusion (600mm) (x3)
   A mainstay of 3D printer construction. You'll see why. We'll use these as the vertical supports for our printer, connecting its structural top and bottom. [Ebay](https://www.ebay.com/itm/322880737350)
 * Stepper Motor (Nema17, 1.7A) (x4)
