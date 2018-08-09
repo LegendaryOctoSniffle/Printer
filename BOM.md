@@ -1,4 +1,3 @@
-For our first meeting, we'll be assembling one "leg" of our printer. Though the parts list below is sufficient for one leg of the printer, we'll eventually be ordering three of all of the quantities provided below.
 
 Parts Group 1:
 
