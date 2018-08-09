@@ -1,8 +1,12 @@
-
 Parts Group 1:
 
 * T8x8 Leadscrew w/nut (500mm) (x3)
   This will be the threaded rod that will move each of our sleds up and down. We'll couple the motor to one end, and secure the length of the rod with a bearing that lets it turn freely. The x8 doesn't mean to buy 8, it designates the pitch of the rod threads. [Ebay](https://www.ebay.com/itm/T8x8-Lead-Screw-Pitch-2-Lead-8-Stainless-Rod-Linear-Rail-Bar-Shaft-w-Brass-Nut/372243139945)
+* 8mm by 500mm guide rod (x6)
+  To drive our sled up and down, we'll mount it to the turning lead screw. But in order to keep the sled from turning, we'll need a second rod to guide it. [Ebay](https://www.ebay.com/itm/8mm-CNC-3D-Printer-Axis-Chromed-Smooth-Rod-Steel-Linear-Rail-Shaft-300-400-500mm/192537955768).
+
+Parts Group 2:
+
 * 8mm pillow block bearing. (x3)
   These are the bearings that will keep the rod aligned in place while letting it turn freely. Buy three. [Ebay](https://www.ebay.com/itm/2X-8mm-pillow-block-Self-aligning-bearing-mounted-support-3D-printer-CNC-Reprap-/322008974125). The linked item is a 2 pack.
 * 2020 Aluminum Extrusion (600mm) (x3)
@@ -13,12 +17,10 @@ Parts Group 1:
   These will couple the 5mm shaft of our drive motor to the 8mm leadscrew. [Ebay](https://www.ebay.com/itm/321966928277)
 * Endstop Switch (x3)
   When the printer first turns on, it doesn't know how far up or down the sleds are on the rods. To find out, it moves the sleds all the way up the rods until they make contact with a switch. When the sleds make contact with the switch, the printer knows the exact position of the sled: it's at the top of its rod. [Ebay](https://www.ebay.com/itm/3-PCS-Mechanical-Endstop-Switch-LED-RepRap-3D-Printer-Prusa-Mendel-RAMPS-1-4-CNC/321996978263) The linked item is a three pack.
-* 8mm by 500mm guide rod (x6)
-  To drive our sled up and down, we'll mount it to the turning lead screw. But in order to keep the sled from turning, we'll need a second rod to guide it. [Ebay](https://www.ebay.com/itm/8mm-CNC-3D-Printer-Axis-Chromed-Smooth-Rod-Steel-Linear-Rail-Shaft-300-400-500mm/192537955768).
 * LM8UU 8mm linear bearing (x6)
   For our sled to slide up and down the guide rod, we'll need to equip it with a linear bearing. [Ebay](https://www.ebay.com/itm/141843551594) The linked item is a four pack.
 
-Parts Group 2:
+Parts Group 3:
 
 * Power supply! 30 amps will be enough for a heated bed, plus dual extrusion (print two colors) if you decide to upgrade later. [Ebay](https://www.ebay.com/itm/Zyltech-12V-30A-360W-power-supply-PSU-for-3D-Printer-CNC-Arduino-Reprap-etc/322100961991?hash=item4afeb6a2c7:g:rOkAAOSwT8JazXm5)
 * Filament. Take your pick from [zyltech](https://www.ebay.com/sch/m.html?_odkw=&_ssn=zyltech&_armrs=1&_osacat=0&_from=R40&_trksid=p2046732.m570.l1313.TR7.TRC1.A0.H0.Xpla+1.75.TRS0&_nkw=pla+1.75&_sacat=0) on Ebay or on [Amazon](https://smile.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=PLA+1.75+filament). Get your color of choice, and anything with a decent rating will do. Don't get a specialty wood, metal, or fibre filament. It's important to get 1.75mm PLA. Get a full kilogram. Polylactic Acid (PLA) is plant-based, it has a fairly low melting temperature, and it doesn't shrink much as it cools.
