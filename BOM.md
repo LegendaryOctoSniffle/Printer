@@ -12,11 +12,11 @@ Parts Group 1:
 * 5mm to 8mm shaft coupler (x3)
   These will couple the 5mm shaft of our drive motor to the 8mm leadscrew. [Ebay](https://www.ebay.com/itm/321966928277)
 * Endstop Switch (x3)
-  When the printer first turns on, it doesn't know how far up or down the sleds are on the rods. To find out, it moves the sleds all the way up the rods until they make contact with a switch. When the sleds make contact with the switch, the printer knows the exact position of the sled: it's at the top of its rod. [Ebay](https://www.ebay.com/itm/3-PCS-Mechanical-Endstop-Switch-LED-RepRap-3D-Printer-Prusa-Mendel-RAMPS-1-4-CNC/321996978263) The linked item is a three pack: it's got all the endstop switches we'll need for all three legs of the printer.
+  When the printer first turns on, it doesn't know how far up or down the sleds are on the rods. To find out, it moves the sleds all the way up the rods until they make contact with a switch. When the sleds make contact with the switch, the printer knows the exact position of the sled: it's at the top of its rod. [Ebay](https://www.ebay.com/itm/3-PCS-Mechanical-Endstop-Switch-LED-RepRap-3D-Printer-Prusa-Mendel-RAMPS-1-4-CNC/321996978263) The linked item is a three pack.
 * 8mm by 500mm guide rod (x6)
-  To drive our sled up and down, we'll mount it to the turning lead screw. But in order to keep the sled from turning, we'll need a second rod to guide it. [Ebay](https://www.ebay.com/itm/8mm-CNC-3D-Printer-Axis-Chromed-Smooth-Rod-Steel-Linear-Rail-Shaft-300-400-500mm/192537955768). We won't be making any other purchases from this seller, so I would recommend buying all three now.
+  To drive our sled up and down, we'll mount it to the turning lead screw. But in order to keep the sled from turning, we'll need a second rod to guide it. [Ebay](https://www.ebay.com/itm/8mm-CNC-3D-Printer-Axis-Chromed-Smooth-Rod-Steel-Linear-Rail-Shaft-300-400-500mm/192537955768).
 * LM8UU 8mm linear bearing (x6)
-  For our sled to slide up and down the guide rod, we'll need to equip it with a linear bearing. [Ebay](https://www.ebay.com/itm/141843551594) The linked item is a four pack. We'll need three total for all three legs, so you'll get them all in this one purchase.
+  For our sled to slide up and down the guide rod, we'll need to equip it with a linear bearing. [Ebay](https://www.ebay.com/itm/141843551594) The linked item is a four pack.
 
 Parts Group 2:
 
