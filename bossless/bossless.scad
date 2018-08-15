@@ -122,7 +122,7 @@ module bossless(
       }
     }
 
-    // Subtracting the "LEGEN" text
+    // Subtracting text_1
     translate([-bossless_x(side_length), bossless_y(side_length), thickness / 2]) {
       rotate([90, 180, -60]) {
         translate([-1, 0, -1.5])
@@ -132,7 +132,7 @@ module bossless(
       }
     }
 
-    // Subtracting the "DARY" text
+    // Subtracting text_2
     translate([bossless_x(side_length), bossless_y(side_length), thickness / 2]) {
       rotate([90, 180, 60]) {
         translate([.8, 0, -1.5])
