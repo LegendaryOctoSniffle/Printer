@@ -10,7 +10,8 @@ module bossless(
     bottom_thickness=5,
     extrusion_inset=29,
     font_size_factor=2/3,
-    extrusion_width=21
+    extrusion_width=21,
+    connection_screw_size=4,
   ) {
   difference() {
 
@@ -98,7 +99,7 @@ module bossless(
     }
 
     // Subtracting the screw holes that connect the three "tops"
-    for (placement = [[1/5, bottom_thickness + 4], [1/2, bottom_thickness + 4], [15/18, thickness - 5]]) {
+    for (placement = [[1/5, bottom_thickness + 4.3], [1/2, bottom_thickness + 4.3], [15/18, thickness - 5]]) {
       screw_extension = placement[0];
       screw_height = placement[1];
       for (side = [1, -1]) {
@@ -108,12 +109,12 @@ module bossless(
           screw_height
         ]) {
           rotate([90, 0, -30 * side]) {
-            cylinder(d = 3.5, h = 20, $fn = 100, center = true);
+            cylinder(d = connection_screw_size*1.17, h = 20, $fn = 100, center = true);
           }
           if (side == -1) {
             rotate([90, 30, -30 * side]) {
               translate([0, 0, 7])
-              cylinder(d = 5.5 / cos(180 / 6) + 0.2, h = 5.5, $fn = 6, center = true);
+              cylinder(d = connection_screw_size*1.83 / cos(180 / 6) + 0.2, h = 5.5, $fn = 6, center = true);
             }
           }
 
