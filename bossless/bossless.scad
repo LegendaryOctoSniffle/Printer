@@ -9,17 +9,21 @@ module bossless(
     thickness=20,
     bottom_thickness=5,
     extrusion_inset=29,
-    font_size_factor=2/3
+    font_size_factor=2/3,
+    extrusion_width=21
   ) {
   difference() {
 
     // The main bulk of the body
     linear_extrude(height = thickness) {
       polygon(points = [
-        [0, 0],
+        [-bossless_x(side_length)*.1, bossless_y(side_length)*.1],
+        [bossless_x(side_length)*.1, bossless_y(side_length)*.1],
         [bossless_x(side_length) * 2, bossless_y(side_length) * 2],
         [-bossless_x(side_length) * 2, bossless_y(side_length) * 2]
       ]);
+        
+      translate([0, extrusion_inset, 0]) circle(d=42, $fn=100);
 
     }
 
@@ -39,29 +43,32 @@ module bossless(
     }
 
     // Subtracting the extrusion
-    translate([0, -500 + extrusion_inset + 21 / 2, 0]) {
-      cube(size = [21, 1000, 50], center = true);
+    translate([0, -extrusion_width/2 + extrusion_inset + extrusion_width / 2, 0]) {
+      cube(size = [extrusion_width, extrusion_width, 50], center = true);
     }
 
     // Subtracting the screw to the left and right of the extrusion
     translate([0, extrusion_inset, thickness / 2]) {
       rotate([90, 0, 90]) {
         cylinder(d = 4.8, h = 100, center = true, $fn = 100);
-        translate([0, 0, 50 + 21 / 2 + 5]) {
+        translate([0, 0, 50 + extrusion_width / 2 + 5]) {
           cylinder(d = 10, h = 100, center = true, $fn = 100);
         }
-        translate([0, 0, -(50 + 21 / 2 + 5)]) {
+        translate([0, 0, -(50 + extrusion_width / 2 + 5)]) {
           cylinder(d = 10, h = 100, center = true, $fn = 100);
         }
       }
     }
 
-    // Subtracting the screw to the front of the extrusion
-    translate([0, -50 + 30 / 2 + extrusion_inset + 28, thickness / 2]) {
+    // Subtracting the screw to the front and back of the extrusion
+    translate([0, extrusion_inset, thickness / 2]) {
       rotate([90, 0, 0]) {
         cylinder(d = 4.8, h = 100, center = true, $fn = 100);
-        translate([0, 0, -35]) {
-          cylinder(d = 7, h = 30, center = true, $fn = 100);
+        translate([0, 0, -(30/2 + extrusion_width/2 + 3)]) {
+          cylinder(d = 9, h = 30, center = true, $fn = 100);
+        }
+        translate([0, 0, 30/2 + extrusion_width/2 + 3]) {
+          cylinder(d = 9, h = 30, center = true, $fn = 100);
         }
       }
     }
@@ -136,3 +143,6 @@ module bossless(
 
   }
 } // END MODULE
+
+// Uncomment to test design:
+// bossless(330);
