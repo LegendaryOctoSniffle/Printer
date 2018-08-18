@@ -11,7 +11,9 @@ module bossless(
     extrusion_inset=29,
     font_size_factor=2/3,
     extrusion_width=21,
-    connection_screw_size=4,
+    connection_screw_size=4.4,
+    mounting_screw_size=4.4,
+    mount_depth=5,
   ) {
   difference() {
 
@@ -51,11 +53,11 @@ module bossless(
     // Subtracting the screw to the left and right of the extrusion
     translate([0, extrusion_inset, thickness / 2]) {
       rotate([90, 0, 90]) {
-        cylinder(d = 4.8, h = 100, center = true, $fn = 100);
-        translate([0, 0, 50 + extrusion_width / 2 + 5]) {
+        cylinder(d = mounting_screw_size, h = 100, center = true, $fn = 100);
+        translate([0, 0, 50 + extrusion_width / 2 + mount_depth]) {
           cylinder(d = 10, h = 100, center = true, $fn = 100);
         }
-        translate([0, 0, -(50 + extrusion_width / 2 + 5)]) {
+        translate([0, 0, -(50 + extrusion_width / 2 + mount_depth)]) {
           cylinder(d = 10, h = 100, center = true, $fn = 100);
         }
       }
@@ -64,11 +66,11 @@ module bossless(
     // Subtracting the screw to the front and back of the extrusion
     translate([0, extrusion_inset, thickness / 2]) {
       rotate([90, 0, 0]) {
-        cylinder(d = 4.8, h = 100, center = true, $fn = 100);
-        translate([0, 0, -(30/2 + extrusion_width/2 + 3)]) {
+        cylinder(d = mounting_screw_size, h = 100, center = true, $fn = 100);
+        translate([0, 0, -(30/2 + extrusion_width/2 + mount_depth)]) {
           cylinder(d = 9, h = 30, center = true, $fn = 100);
         }
-        translate([0, 0, 30/2 + extrusion_width/2 + 3]) {
+        translate([0, 0, 30/2 + extrusion_width/2 + mount_depth]) {
           cylinder(d = 9, h = 30, center = true, $fn = 100);
         }
       }
@@ -109,12 +111,12 @@ module bossless(
           screw_height
         ]) {
           rotate([90, 0, -30 * side]) {
-            cylinder(d = connection_screw_size*1.17, h = 20, $fn = 100, center = true);
+            cylinder(d = connection_screw_size, h = 20, $fn = 100, center = true);
           }
           if (side == -1) {
             rotate([90, 30, -30 * side]) {
               translate([0, 0, 7])
-              cylinder(d = connection_screw_size*1.83 / cos(180 / 6) + 0.2, h = 5.5, $fn = 6, center = true);
+              cylinder(d = connection_screw_size*1.65 / cos(180 / 6) + 0.2, h = 5.5, $fn = 6, center = true);
             }
           }
 
@@ -132,7 +134,7 @@ module bossless(
       }
     }
 
-    // Subtracting text_2
+    // Subtracting t
     translate([bossless_x(side_length), bossless_y(side_length), thickness / 2]) {
       rotate([90, 180, 60]) {
         translate([.8, 0, -1.5])
