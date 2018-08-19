@@ -77,7 +77,7 @@ difference() {
       translate([0, bossless_R(side_length) * 22 / 24, 0])
       circle(d = 4.3, $fn = 100);
 
-      translate([0, bossless_R(side_length) * 17 / 24, 0])
+      translate([0, bossless_R(side_length) * 15 / 24, 0])
       circle(d = 4.3, $fn = 100);
     }
     for (side = [-1, 1]) {
@@ -85,7 +85,7 @@ difference() {
         translate([side * bossless_x(side_length) * 23 / 24 - side * 15, bossless_y(side_length) * 23 / 24, 0])
         circle(d = 4.3, $fn = 100);
 
-        translate([side * bossless_x(side_length) * 18 / 24 - side * 15, bossless_y(side_length) * 18 / 24, 0])
+        translate([side * bossless_x(side_length) * 14 / 24 - side * 15, bossless_y(side_length) * 14 / 24, 0])
         circle(d = 4.3, $fn = 100);
       }
     }
