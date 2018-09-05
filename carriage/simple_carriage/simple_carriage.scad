@@ -13,14 +13,15 @@ extrusion_center = -length/2 - carriage_offset - 10;
 
 
 linear_bearing_width = 16;
-screw_width = 3.65;
+screw_width = 3.5;
 screw_distance = 12;
 screw_depth = 15;
 lead_screw_width = 11.5;
+lead_screw_flange_width = 24;
 
 limit_switch_screw_offset_x = 2.7;
 limit_switch_screw_offset_y = 6;
-limit_switch_screw_width = 4.1;
+limit_switch_screw_width = 3.9;
 limit_switch_screw_depth = 15;
 
 // The `difference` function starts with the first thing and
@@ -62,9 +63,12 @@ difference() {
         }
         // Lead screw hole
         cylinder(h = height*2, d=lead_screw_width, center=true, $fn=100);
+        
+        translate([0, 0, -height])
+        cylinder(h = height*2, d=lead_screw_flange_width, center=true, $fn=100);
     }
     
-    for (side = [-1, 0, 1]) {
+    for (side = [-2, -1, 0, 1, 2]) {
     // Limit switch adjustment screw
         translate([-length/2 + limit_switch_screw_offset_x, side*limit_switch_screw_offset_y, height/2 - limit_switch_screw_depth/2 + 1]) {
             cylinder(h = limit_switch_screw_depth + .5, d=limit_switch_screw_width, center=true, $fn=100);
