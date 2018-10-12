@@ -64,6 +64,7 @@ difference() {
         // Lead screw hole
         cylinder(h = height*2, d=lead_screw_width, center=true, $fn=100);
         
+        // Hole for mounting flange under the carriage
         translate([0, 0, -height])
         cylinder(h = height*2, d=lead_screw_flange_width, center=true, $fn=100);
     }

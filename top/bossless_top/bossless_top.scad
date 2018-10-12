@@ -19,7 +19,7 @@ mounting_screw_length = 12;
 
 connection_screw_size = 4.4;
 mounting_screw_size = 4.4;
-extrusion_width = 20.7;
+extrusion_width = 21;
 
 text_1 = "LEGEN";
 text_2 = "DARY";

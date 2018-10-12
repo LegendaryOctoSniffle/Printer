@@ -1,12 +1,15 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/LegendaryOctoSniffle/Lobby)
 # Printer
 
+Design is complete. It works:
+
+![the legendary octosniffle in action](pics/legendary_octosniffle_in_action.gif)
+
 This repository is for the LegendaryOctoSniffle design group. The LegendaryOctoSniffle will be a new 3D delta printer design, inspired by the RepRap [Kossel](http://reprap.org/wiki/Kossel) and [3DR](http://reprap.org/wiki/3DR). The printer will be designed around lead-screw drives and magnetic effector joints.
 
 This repository will ultimately include models, images, instructions, parts lists, etc., for the construction of the LegendaryOctoSniffle. Presently, it contains coordinating instructions for the design group who will be creating these materials.
 
 ![Bossless top](top/bossless_top/render.png)
-![Carriage example in real life](carriage/carriage_irl.png)
 
 ## Goals
 
